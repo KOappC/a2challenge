@@ -15,33 +15,26 @@
 }
 */
 
+
 var user = {
     email: "coolguy@gmail.com",
     password: "ILoveCoffee",
     name: "Grant Chirpus"
 };
 
-
-/*
-
-<form name="login">
-    <input type="text" placeholder="Email">
-    <input type="password" placeholder="Password">
-    <input type="button" onclick="check(this.form)">
-    </form>
-*/
-
 function login(form) {
-    var inputs = document.querySelectorAll("input");
+    var input = document.querySelectorAll("input");
+
     var userLogin = {
-        email: inputs[0].value,
-        password: inputs[1].value
+        email: input[0].value,
+        password: input[1].value
     };
-    console.log(form);
+    console.log(input);
+    document.getElementsByClassName("logIn").style.display = "none";
 
     if(userLogin.email == "user.email" && userLogin.password == "user.password") {
         console.log("Successful login");
-        document.getElementsByClassName("LogIn").style.display = "none";
+        document.getElementsByClassName("logIn").style.display = "none";
         document.getElementsByClassName("welcomeMessage").style.display = "flex";    /* create this */
     }
     else
