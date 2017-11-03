@@ -2,6 +2,14 @@ body {
     background-color: #000000;
 }
 
+/*a {
+    color: #A4A6A5;
+}*/
+
+a:hover {
+    color: #4E4F4E;
+}
+
 .logIn {
     display: flex;
     flex-direction: column;
@@ -10,6 +18,15 @@ body {
     background-color: #CCCCCC;
     width: 400px;
     height: 400px;
+}
+
+.logIn h4 {
+    font-size: 32px;
+    margin-top: 50px;
+}
+
+.logIn h5, a {
+    color: #A1A1A1;
 }
 
 .form {
@@ -21,7 +38,12 @@ body {
 .form .inputs {
     background-color: #CCCCCC;
     border: 0;
-    border-bottom: 1px solid #000000;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: 300px;
+    border-bottom: 1px solid #BDB6B5;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
 }
 
 .backgroundDetails {
@@ -37,4 +59,21 @@ body {
     font-size: 20px;
     margin-top: 10px;
     text-align: center;
+}
+
+#button {
+    background-color: #000000;
+    color: #E7DACB;
+    padding: 15px 32px;
+    margin: 30px auto;
+    text-align: center;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    border: 0;
+    width: 300px;
+}
+
+#button:hover {
+    background-color: #4E4F4E;
 }
