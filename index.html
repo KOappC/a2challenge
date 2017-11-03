@@ -8,19 +8,23 @@
 </head>
 <body>
 
-<h6>Welcome Back</h6>
+<div class="backgroundDetails">
+
+    <h6 id="welcomeBack">Welcome Back</h6>
+
+</div>
 
 <div class="logIn">
 
     <h4>Hello, friend.</h4>
 
-    <div class="form">
+    <form class="form">
 
-        <input type="text" placeholder="Email">
-        <input type="text" placeholder="Password">
-        <button type="button" onclick="login()">SIGN IN</button>
+        <input type="text" class="inputs" name="userId" placeholder="Email">
+        <input type="text" class="inputs" name="pWord" placeholder="Password">
+        <input type="button" onclick="login(this.form)" value="login">SIGN IN</input>
 
-    </div>
+    </form>
 
     <h5>Having trouble? <a href="http://IForgotMyPassword.com/PleaseDontBeARealWebsite">Recover your password</a></h5>
 
